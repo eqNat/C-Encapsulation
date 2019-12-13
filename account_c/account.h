@@ -35,6 +35,6 @@ void delete(struct Account* this);
 void deposit(struct Account* const this, int amount);
 void withdraw(struct Account* const this, int amount);
 
-// obverser functions
+// observer functions
 int getBalance(const struct Account* const this);
 int Account_getCount();
