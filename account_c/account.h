@@ -15,8 +15,8 @@
 // gets big, you may have to append a struct name prefix to functions to    //
 // avoid name collisions.                                                   //
 //**************************************************************************//
-// Notice the extra 'const' in 'Account_getBalance', this is like a         //
-// constant member function in C++ such as:                                 //
+// Notice the extra 'const' in 'getBalance', this is like a constant        //
+// member function in C++ such as:                                          //
 //                                                                          //
 //         int getBalance() const;                                          //
 //                                                                          //
