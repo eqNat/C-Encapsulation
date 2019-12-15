@@ -4,9 +4,9 @@
 
 int main()
 {
-	struct Account* account1 = new_Account();
-	struct Account* account2 = new_Account();
-	struct Account* account3 = new_Account();
+	Account* account1 = new_Account();
+	Account* account2 = new_Account();
+	Account* account3 = new_Account();
 
 	deposit(account1, 40);
 	deposit(account2, 50);

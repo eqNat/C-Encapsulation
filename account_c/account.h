@@ -25,16 +25,16 @@
 
 #pragma once
 
-struct Account;
+typedef struct Account Account;
 
 // initializer and cleanup functions
-struct Account* new_Account();
-void delete(struct Account* this);
+Account* new_Account();
+void delete(Account* this);
 
 // transformer functions
-void deposit(struct Account* const this, int amount);
-void withdraw(struct Account* const this, int amount);
+void deposit(Account* const this, int amount);
+void withdraw(Account* const this, int amount);
 
 // observer functions
-int getBalance(const struct Account* const this);
+int getBalance(const Account* const this);
 int Account_getCount();

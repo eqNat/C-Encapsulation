@@ -9,32 +9,32 @@ struct Account
 
 static int count = 0;
 
-struct Account* new_Account()
+Account* new_Account()
 {
     count++;
-    struct Account* new_account = malloc(sizeof(struct Account));
-    new_account->balance = 0;
-    return new_account;
+    Account* account = malloc(sizeof(Account));
+    account->balance = 0;
+    return account;
 }
 
-void delete(struct Account* this)
+void delete(Account* this)
 {
     count--;
     free(this);
 }
 
-void deposit(struct Account* const this, int amount)
+void deposit(Account* const this, int amount)
 {
     this->balance += amount;
 }
 
-void withdraw(struct Account* const this, int amount)
+void withdraw(Account* const this, int amount)
 {
     if (this->balance >= amount)
         this->balance -= amount;
 }
 
-int getBalance(const struct Account* const this)
+int getBalance(const Account* const this)
 {
     return this->balance;
 }
