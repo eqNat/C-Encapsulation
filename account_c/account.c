@@ -2,12 +2,12 @@
 
 #include "account.h"
 
+static int count = 0;
+
 struct Account
 {
     int balance;
 };
-
-static int count = 0;
 
 Account* new_Account()
 {
