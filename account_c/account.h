@@ -5,22 +5,21 @@
 //////////////////////////////////////////////////////////////////////////////
 // Our "private data members" are hidden away in 'account.c'.               //
 //**************************************************************************//
-// GCC supports function attributes '((constructor))' and '((destructor))'. //
-// They're limited from what C++ uses since C constructors only run once    //
-// before 'main()', and C destructors only run once after 'main()'. Due to  //
-// these restrictions, we will INSTEAD implement initializer and cleanup    //
-// functions that have to be manually called every time we use them.        //
+// Our initializer and cleanup functions will be alternatives to            //
+// constructors and destructors; We'll have to explicitly call them every   //
+// time we use them.                                                        //
 //**************************************************************************//
 // C supports neither function overloading nor namespaces. If your program  //
 // gets big, you may have to append a struct name prefix to functions to    //
 // avoid name collisions.                                                   //
 //**************************************************************************//
 // Notice the extra 'const' in 'getBalance', this is like a constant        //
-// member function in C++ such as:                                          //
+// member function such as:                                                 //
 //                                                                          //
 //         int getBalance() const;                                          //
 //                                                                          //
-// found in 'account_cpp/account.h                                          //
+// If you're unfamiliar with using 'const' with pointers, then this should  //
+// be a good resource: https://www.youtube.com/watch?v=7arYbAhu0aw          //
 //////////////////////////////////////////////////////////////////////////////
 
 #pragma once
