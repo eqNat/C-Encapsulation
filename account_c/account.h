@@ -19,7 +19,7 @@
 //         int getBalance() const;                                          //
 //                                                                          //
 // If you're unfamiliar using 'const' with pointers, then this should be a  //
-// good resource: https://www.youtube.com/watch?v=7arYbAhu0aw               //
+// good resource: www.youtube.com/watch?v=7arYbAhu0aw                       //
 //////////////////////////////////////////////////////////////////////////////
 
 #pragma once
