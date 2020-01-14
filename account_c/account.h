@@ -10,8 +10,8 @@
 // time we use them.                                                        //
 //**************************************************************************//
 // C supports neither function overloading nor namespaces. If your program  //
-// gets big, you may have to append a struct name prefix to functions to    //
-// avoid name collisions.                                                   //
+// gets big, try to keep your architecture loosely coupled to avoid name    //
+// collision.                                                               //
 //**************************************************************************//
 // Notice the extra 'const' in 'getBalance', this is like a constant        //
 // member function such as:                                                 //
