@@ -13,8 +13,8 @@
 // gets big, try to keep your architecture loosely coupled to avoid name    //
 // collision.                                                               //
 //**************************************************************************//
-// Notice the extra 'const' in 'getBalance', this is like a constant        //
-// member function such as:                                                 //
+// Notice the extra 'const' in 'getBalance', this is analogous to a         //
+// constant member function such as:                                        //
 //                                                                          //
 //         int getBalance() const;                                          //
 //                                                                          //
